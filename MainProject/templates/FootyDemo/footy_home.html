@@ -1,0 +1,19 @@
+{% extends 'FootyDemo/footy_base.html' %}
+{% load staticfiles %}
+{% block templatecontent %}
+<section>
+    <div id="footyPic">
+        <img src="{% static 'images/footy_home.jpg' %}" usemap="#image-map"> <!-- added image mapping -->
+        <span class="footy_center"><strong>Welcome to the Footy Demo App</strong><br />
+        A collection manager app for a major soccer fan! There's a database to manage a
+        collection of jerseys, an API for recent soccer scores, and recent news stories scraped from
+        the MLS website. Take a look.</span>
+        <br />
+        <a class="footy_caption" href="https://unsplash.com/@davidclarke?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from david clarke"><span>photo by david clarke</span></a>
+<!--        Soccer ball Easter egg image mapping-->
+        <map name="image-map">
+            <area target="_blank" alt="Click if you dare! (;" title="Click if you dare! (;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" coords="740,265,120" shape="circle">
+        </map>
+    </div>
+</section>
+{% endblock %}

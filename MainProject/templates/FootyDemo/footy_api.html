@@ -1,0 +1,219 @@
+{% extends 'FootyDemo/footy_base.html' %}
+{% load staticfiles %}
+{% block templatecontent %}
+
+<section>
+    <div class="match-container">
+            <!-- Container 1 -->
+            <div class="flex-container">
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="../../static/images/se.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h2 class="white-head">
+                                <a href="../2009/Matches" target="_blank">View Matches</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- End Container 1 -->
+            <!-- Container 2 -->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="../../static/images/ed.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h2 class="white-head">
+                                <a href="../2018/Matches" target="_blank">View Matches</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- End Container 2 -->
+            <!-- Container 3 -->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="../../static/images/sa.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h2 class="white-head">
+                                <a href="../2019/Matches" target="_blank">View Matches</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Container 3 -->
+            <!-- Container 4 -->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="../../static/images/ll.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h2 class="white-head">
+                                <a href="../2014/Matches" target="_blank">View Matches</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Container 4 -->
+            <!-- Container 5 -->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="../../static/images/l1.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h2 class="white-head">
+                                <a href="../2015/Matches" target="_blank">View Matches</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Container 5 -->
+            <!-- Container 6 -->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="../../static/images/ce.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h2 class="white-head">
+                                <a href="../2016/Matches" target="_blank">View Matches</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Container 6 -->
+            <!-- Container 7 -->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="../../static/images/bd.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h2 class="white-head">
+                                <a href="../2002/Matches" target="_blank">View Matches</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Container 7 -->
+            <!-- Container 8 -->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="../../static/images/wc.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h2 class="white-head">
+                                <a href="../2000/Matches" target="_blank">View Matches</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Container 8 -->
+            <!-- Container 9 -->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="../../static/images/ec.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h2 class="white-head">
+                                <a href="../2018/Matches" target="_blank">View Matches</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Container 9 -->
+            <!-- Container 10 -->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="../../static/images/cl.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h2 class="white-head">
+                                <a href="../2001/Matches" target="_blank">View Matches</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Container 10 -->
+            <!-- Container 11 -->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="../../static/images/pl.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h2 class="white-head">
+                                <a href="../2017/Matches" target="_blank">View Matches</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Container 11 -->
+            <!-- Container 12 -->
+                <div class="photo-container">
+                    <div class="photo">
+                        <img src="../../static/images/ple.jpg" alt="">
+                        <div class="photo-overlay">
+                            <h2 class="white-head">
+                                <a href="../2021/Matches" target="_blank">View Matches</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Container 12 -->
+         </div>
+    </div>
+ </section>
+
+
+
+
+<!--<section>-->
+<!--    <div class="flex-container footy">-->
+<!--        <form method="post">-->
+<!--            {% csrf_token %} &lt;!&ndash; Django needs a csrf token for every form &ndash;&gt;-->
+<!--            <label>Select an Area of the World:</label>-->
+<!--            <select name="parentArea" id="parentArea">-->
+<!--                {% for area in world.childAreas %}  &lt;!&ndash; iterates through the returned options&ndash;&gt;-->
+<!--                    {% if parents.id == area.id %}  &lt;!&ndash; maintains the selected option if postback &ndash;&gt;-->
+<!--                        <option value="{{area.id}}" selected>{{area.name}}</option>-->
+<!--                    {% else %}-->
+<!--                        <option value="{{area.id}}">{{area.name}}</option>-->
+<!--                    {% endif %}-->
+<!--                {% endfor %}-->
+<!--            </select>-->
+<!--            <button class="primary-bright-button" type="submit" name="submit" value="submit">Select Area</button>-->
+<!--        </form>-->
+
+<!--        {% if parents != None %} &lt;!&ndash; checks if the parent dropdown has been selected before rendering &ndash;&gt;-->
+<!--            <form method="post">-->
+<!--                {% csrf_token %}-->
+<!--                <label>Select a Country:</label>-->
+<!--                <select name="childArea" id="childArea">-->
+<!--                    {% for area in parents.childAreas %}    &lt;!&ndash; iterates through the areas &ndash;&gt;-->
+<!--                        {% if childArea == area.id %}       &lt;!&ndash; maintains the selected option on postback &ndash;&gt;-->
+<!--                            <option value="{{area.id}}" selected>{{area.name}}</option>-->
+<!--                        {% else %}-->
+<!--                            <option value="{{area.id}}">{{area.name}}</option> &lt;!&ndash; sets the value to the id and the selection display to the name &ndash;&gt;-->
+<!--                        {% endif %}-->
+<!--                    {% endfor %}-->
+<!--                </select>-->
+<!--                <input type="hidden" name="parentArea" value="{{parents.id}}"> &lt;!&ndash; sends the parent id back on postback &ndash;&gt;-->
+<!--                <div class="row">-->
+<!--                    <button class="primary-bright-button" type="submit" name="submit" value="submit">Filter for Country</button>-->
+<!--                    <button class="primary-bright-button" type="submit" name="submit" value="noFilter">Get All Leagues</button> &lt;!&ndash; value will be captured on back end to determine handling &ndash;&gt;-->
+<!--                </div>-->
+<!--            </form>-->
+
+<!--            {% if leagues != None %} &lt;!&ndash; checks for data before populating &ndash;&gt;-->
+<!--                <form method="post">-->
+<!--                    {% csrf_token %}-->
+<!--                    <label>Select a League:</label>-->
+<!--                    <select name="league" id="league">-->
+<!--                        {% for league in leagues.competitions %}-->
+<!--                            <option value="{{league.id}}">{{league.name}}</option>-->
+<!--                        {% endfor %}-->
+<!--                    </select>-->
+<!--                    <button class="primary-bright-button" type="submit" name="submit" value="submit">Get Matches</button>-->
+<!--                </form>-->
+<!--            {% endif %}-->
+<!--        {% endif %}-->
+<!--    </div>-->
+<!--    <div class="flex-container">-->
+<!--        <img id='apiImg' src="{% static 'images/FootyLeagues.png' %}" alt="Leagues available for free" />-->
+<!--        <p class="wrapper">While the list of areas, countries, and leagues it extensive,-->
+<!--        the free API only has access to information for these 12 leagues.</p>-->
+<!--    </div>-->
+<!--</section>-->
+
+{% endblock %}

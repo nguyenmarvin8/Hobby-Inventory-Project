@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load staticfiles %} <!-- must load static files on every template, even though it extends another template -->
+{% block appcontent %}
+    <section>
+        <div class="flex-container wrapper">
+            <h5 class="button1 bouncy" style="animation-delay:0.07s">Footy Demo Application</h5>
+            <hr />
+            <a class='button1 bouncy' href="{% url 'footy' %}">Footy Home Page</a>
+            <a class='button1 bouncy' href="{% url 'listJerseys' %}" style="animation-delay:0.14s">Jersey Collection</a>
+            <a class='button1 bouncy' href="{% url 'footyApi' %}" style="animation-delay:0.21s">Footy API Service</a>
+            <a class='button1 bouncy' href="{% url 'MLSNews' %}" style="animation-delay:0.30s">News from the MLS</a>
+        </div>
+    </section>
+
+    {% block templatecontent %}{% endblock %} <!-- section that all the template specific content will render within -->
+{% endblock %}
+

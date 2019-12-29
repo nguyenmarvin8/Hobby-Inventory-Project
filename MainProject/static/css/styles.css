@@ -1,0 +1,554 @@
+/* Defining Root Colors */
+:root{
+    --midtone: #8D7148;
+    --neutral: #B49159;
+    --contrast: #403025;
+    --standout: #2F3C48;
+    --highlight: #f7c552;
+    --banner: #f89624;
+    --dark: #232323;
+    --footer: #675036;
+    --lightGray: #E8EFF6;
+}
+
+body{
+    background: linear-gradient(180deg, black, transparent 20%), linear-gradient(360deg, #000, transparent 20%), #090c1f url(/static/images/wall-ship.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    max-height: 100%;
+    margin: 0;
+    overflow: scroll;
+}
+
+.jumbotron{
+    background-color: transparent;
+    color:var(--neutral);
+}
+.main-content {
+    color:#fff!important;
+    letter-spacing:1px;
+    background: #0e0d0db8;
+    padding: 10px 40px;
+    border: solid 1px var(--lightGray);
+    border-radius: 20px;
+}
+
+.main-content p {
+    color:#fff;
+    font-style:italic;
+    word-spacing: 3.5px;
+}
+
+/* ===========================================
+  Navigation Bar styling  //  START
+=============================================*/
+.navbar-global .navbar-brand {
+    color: white;
+    border-radius: 10px;
+    font-family: 'Permanent Marker', cursive;
+    background:#0000009e;
+}
+.collapsed + .main-content {
+    margin-left: 30px;
+}
+
+#buttonList {
+    transition: all .7s;
+}
+
+.wheelButtons{
+    display: flex;
+    justify-content: center;
+}
+
+.wheelButtons .rotateWheel {
+    -webkit-transition: transform -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.wheelButtons .rotateWheel:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.wheelButtons a {
+    display: flex;
+}
+
+.wheelButtons img{
+    width: 50px;
+    background: var(--dark);
+    border-radius: 50%;
+}
+
+
+
+.wheelButtons figcaption{
+    color: var(--neutral);
+    margin-left: -10px;
+}
+
+#mainWheel > .wheelButtons{
+    color: var(--neutral);
+    align-self: center;
+    padding:20px;
+    width: 50px;
+    background: var(--dark);
+}
+/* ===== Navigation Bar styling  //  END =====*/
+
+/* ===========================================
+     Footer styling //  START
+=============================================*/
+.footer {
+    padding:10px 0;
+    color: var(--neutral);
+    position: fixed;
+    bottom: 20px;
+    margin: 20;
+    width: 20%;
+    background:transparent;
+}
+
+.footer .item.social > a:hover {
+    opacity:0.9;
+}
+
+.footer .copyright {
+   font-style:italic;
+    padding-bottom:14px;
+    font-size:13px;
+    margin-bottom:0;
+    color:#fff;
+}
+
+/* Styling for the social media icons */
+
+.icons {
+  top: 80%;
+  left: 0;
+  transform: translateY(-50%);
+  position: fixed;
+  z-index: 100;
+}
+
+.icons ul {
+  padding: initial;
+}
+
+.icons ul li {
+  height: 40px;
+  width: 30px;
+  list-style-type: none;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 27px;
+  margin-top: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+.facebook {
+  background-color: #2c80d3;
+
+}
+.twitter {
+  background-color: #53c5ff;
+
+}
+.snapchat {
+  background-color: #fffc00;
+}
+.instagram {
+  background-color: #833AB4;
+
+}
+.youtube {
+  background-color: #fa0910;
+
+}
+
+.icons ul li:hover {
+  padding-left: 30px;
+  width: 80px;
+  transition: .5s;
+}
+
+
+/* =====  Footer styling  //  END =====*/
+
+/* Beginning of the stock CSS template */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+}
+
+p {
+	color: var(--midtone);
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.primary-light-button {
+
+	background-color: var(--contrast);
+	color: var(--lightGray);
+	display: inline-block;
+	font-size: 12px;
+	padding:5px 12px 5px 12px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	border-radius: 20px;
+	border: none;
+	margin:1px;
+}
+/* styles the details button */
+.details-btn {
+	background-color: var(--standout);
+	/*background-color: rgb(233, 169, 95);*/
+	color: var(--neutral);
+	display: inline-block;
+	font-size: 12px;
+	padding: 5px 12px 5px 12px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	border-radius: 5px;
+	border: none;
+	margin:1px;
+    text-transform: uppercase;
+
+}
+
+.primary-bright-button {
+	background-color: var(--standout);
+	color: var(--neutral);
+	display: inline-block;
+	font-size: 12px;
+	padding:5px 12px 5px 12px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	border-radius: 20px;
+	border: none;
+	margin-top:3px;
+	text-transform: uppercase;
+}
+
+.primary-bright-button:hover , .primary-light-button:hover{
+    box-shadow: 0px 0px 4px 2px var(--highlight);
+}
+
+.primary-light-button:hover{
+    box-shadow: 0px 0px 4px 2px #fff;
+}
+
+/*:root{
+    --midtone: #8D7148;
+    --neutral: #B49159;
+    --contrast: #403025;
+    --standout: #2F3C48;
+    --highlight: #f7c552;
+    --banner: #f89624;
+    --dark: #232323;
+    --footer: #675036;
+    --lightGray: #E8EFF6;
+}*/
+
+.wrapper {
+  text-align: center;
+  padding: 5px;
+}
+
+.news{
+ background:#0000009e;
+ padding: 10px;
+ border-radius: 15px;
+ text-decoration:none;
+}
+
+
+
+.wrapper .tabNav {
+    color: #fff;
+    background:#0000009e;
+    font-style:none;
+    text-decoration:none;
+    padding:10px;
+    border-radius:20px;
+
+}
+/* End of the stock CSS template */
+
+/* ===========================================
+    Specific styling Footy Demo App //  START
+=============================================*/
+
+.footy button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.footy table{
+    width: 75%;
+    align: center;
+    margin: 20px auto;
+    border: 40px 20px 10px 20px;
+}
+
+.footy hr{
+    color: var(--banner);
+    border-top-width: 2px;
+    margin: 2px;
+}
+
+.footy h4{
+    color: var(--midtone);
+    text-align: center;
+    text-shadow: 2px 2px var(--standout);
+}
+
+.footy select, label{
+    color: var(--midtone);
+    background: var(--standout);
+    display: flex;
+}
+
+div #footyPic{
+    text-align: center;
+    position: relative;
+    padding:0;
+}
+
+#footyPic img {
+    border-radius: 10px;
+    height:10%;
+    height:500px;
+/*   padding: 80px;*/
+    align: center;
+    margin:0;
+    vertical-align:middle;
+    width:100%;
+}
+
+#footyPic span{
+    width: 100%;
+    border-radius: 10px;
+}
+.footy_top {
+ background:transparent!important;
+    display:inline-block;
+    padding:2px 3px;
+    position:relative;
+    top: -230px;
+    width:100%;
+    color: var(--neutral);
+    text-shadow: 2px 2px 5px var(--dark);
+}
+
+.footy_center{
+    display:inline-block;
+    padding:2px 3px;
+    color: var(--lightGray);
+    width: 100%;
+    margin-top:0;
+}
+.footy_caption{
+    background:var(--contrast);
+    color:var(--lightGray)
+    text-decoration:none;
+    padding:4px 6px;
+    font-family: Helvetica, Ubuntu, Roboto, Noto, Arial, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    line-height:1.2;
+    display:inline-block;
+    border-radius:3px;
+    position: absolute;
+    right: 25%;
+}
+
+#jerseyCollectionPage {
+background:#0000009e;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+#jerseyCollectionPage table th
+ {
+    background:var(--standout);
+    border-radius: 10px;
+    text-align:center;
+    font-size: 13px;
+}
+
+#jerseyCollectionPage table td
+ {
+     background:var(--dark);
+     border-radius: 10px;
+     text-align:center;
+     font-size: 12px;
+}
+
+
+/* New API page styling/layout */
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photo {
+    position: relative;
+    width: 150px;
+    height: 220px;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 0px;
+    border: 1px solid #021a40;
+    background-color: #ff0;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, .7);
+}
+
+.photo-container {
+    text-align: center;
+    margin: 50px 60px 50px 50px;
+    width: 100px;
+    height: 220px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 150px;
+    height: 220px;
+}
+
+ .photo-overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center; /* For centering text inside .photo-overlay */
+    align-items: center;
+    background: rgba(0,0,0,.5);
+    }
+
+.white-head {
+    color: #c9bdaa;
+    padding: 70px 0px 50px 0px;
+    text-align: center;
+    /*margin-top: 5%;*/
+}
+
+/* Photo Overlay Transitions */
+
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+
+.photo img {
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+/*Bouncing buttons*/
+.bouncy{
+    animation:bouncy 5s infinite linear;
+    position:relative;
+}
+@keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+}
+
+.wrapper a,h5{
+    display:inline-block;
+    padding:0.9em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+}
+.wrapper a:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+.flex-container a.button1{
+    display:block;
+    margin:0.4em auto;
+    }
+}
+
+
+.wrapper h5 {
+    flex-grow: 0;
+}
+.wrapper a {
+    flex-grow: 1;
+}
+
+/*.footy tr,th,td{
+    color: var(--midtone);
+    background-color: var(--highlight);
+}*/
+
+
+/* =====  Specific styling Footy Demo App // END =====*/
+
+
+/* ============= RESPONSIVE max-width: 991p =========== */
+
+@media (max-width: 991px){
+
+}
+
+/* ============= RESPONSIVE max-width: 768px =========== */
+@media (max-width: 768px){
+
+}
+
+/* ============= RESPONSIVE max-width: 385px=========== */
+@media (max-width: 385px){
+
+
+}
